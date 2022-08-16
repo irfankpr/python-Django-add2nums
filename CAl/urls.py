@@ -19,12 +19,12 @@ from django.urls import path, include
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def add(request):
     n1= float( request.GET['num1'])
     n2= float( request.GET['num2'])
-    return render(request, 'home.html', {'num': n1+n2})
+    return render(request, 'index.html', {'num': n1+n2})
 
 urlpatterns = [
     path('admin/', admin.site.urls),
