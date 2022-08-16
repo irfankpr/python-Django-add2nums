@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block cont %}
+<section id="todo">
+    <div class="container ">
+            <div class="col-md-12">
+                <h1 class="text-center display-4">Calculator</h1>
+            </div>
+            <div class="col-12">
+                <form action="add">
+                    <label for="title" class="float-left col-12">Django 1st project :- </label>
+                    <input type="text" name="num1" id="num1" class="form-control m-3 col-5 float-left" placeholder="Number 1"/>
+                    <input type="text" name="num2" id="num2" class="form-control m-3 col-5 float-left" placeholder="Number 2"/>
+                    <input type="submit" class="btn btn-warning col-5 float-left m-3" value="ADD"/>
+                </form>
+            </div>
+            <div class="col-12 float-left">
+                <h1 class="col-3 float-left">SUM = </h1>
+                <h1 class="text-danger col-3 float-left">{{num}}</h1>
+            </div> 
+                   
+    </div>
+</section>
+
+{% endblock %}
